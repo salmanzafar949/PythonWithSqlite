@@ -14,6 +14,7 @@ def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS stuff(unix REAL, datestamp TEXT, keyword TEXT, value REAL)')
 
 def insert_data():
+    # Executing the Insert query
     c.execute("INSERT INTO stuff VALUES(123456,'2017-12-23', 'python', 5)")
     conn.commit()
     c.close()
